@@ -3,18 +3,18 @@ loaderVersion="[43,)"
 license="The Unlicensed"
 
 [[mods]]
-modId="tutorial"
-displayName="Template Mod"
+modId="simple_item_block_mod"
+displayName="Simple Item Block Mod"
 version="${file.jarVersion}"
-description="Tutorial Mod for Forge"
+description="Add Simple Item and Simple Block"
 logoFile="icon.png"
 
-[[dependencies.tutorial]]
+[[dependencies.simple_item_block_mod]]
 modId="forge"
 versionRange="[43,)"
 mandatory=true
 
-[[dependencies.tutorial]]
+[[dependencies.simple_item_block_mod]]
 modId="minecraft"
 versionRange="[1.19.2,1.20)"
 mandatory=true

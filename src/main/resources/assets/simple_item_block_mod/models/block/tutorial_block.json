@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorial:block/tutorial_block"
+    "all": "simple_item_block_mod:block/tutorial_block"
   }
 }
