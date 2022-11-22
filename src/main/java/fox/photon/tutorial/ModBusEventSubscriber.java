@@ -16,6 +16,15 @@ import net.minecraftforge.registries.NewRegistryEvent;
 import net.minecraftforge.registries.RegisterEvent;
 
 public class ModBusEventSubscriber {
+    //イベント名の表示
+    private void printEventName(Event event){
+        if(event instanceof RegisterEvent) {
+            System.out.println(event.getClass().getName() + ", Key=" + ((RegisterEvent)event).getRegistryKey());
+        }else{
+            System.out.println(event.getClass().getName());
+        }
+    }
+    //各種サブスクライバー
     @SubscribeEvent public void subscribeEvent(AddPackFindersEvent event){printEventName(event);}
     @SubscribeEvent public void subscribeEvent(ModelEvent.BakingCompleted event){printEventName(event);}
     @SubscribeEvent public void subscribeEvent(ModelEvent.RegisterAdditional event){printEventName(event);}
@@ -59,12 +68,4 @@ public class ModBusEventSubscriber {
     @SubscribeEvent public void subscribeEvent(SoundEngineLoadEvent event){printEventName(event);}
     @SubscribeEvent public void subscribeEvent(TextureStitchEvent.Pre event){printEventName(event);}
     @SubscribeEvent public void subscribeEvent(TextureStitchEvent.Post event){printEventName(event);}
-
-    private void printEventName(Event event){
-        if(event instanceof RegisterEvent) {
-            System.out.println(event.getClass().getName() + ", Key=" + ((RegisterEvent)event).getRegistryKey().toString());
-        }else{
-            System.out.println(event.getClass().getName());
-        }
-    }
 }
