@@ -4,6 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Constants {
-    public static final String MOD_ID = "simple_item_block_mod";
+    public static final String MOD_ID = "event_bus_check";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 }

@@ -1,9 +1,0 @@
-{
-  "type" : "minecraft:smelting",
-  "cookingtime" : 200,
-  "experience" : 0.1,
-  "ingredient" : {
-    "item" : "simple_item_block_mod:tutorial_item"
-  },
-  "result" : "simple_item_block_mod:tutorial_block"
-}

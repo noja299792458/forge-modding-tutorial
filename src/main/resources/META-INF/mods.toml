@@ -3,18 +3,18 @@ loaderVersion="[43,)"
 license="The Unlicensed"
 
 [[mods]]
-modId="simple_item_block_mod"
-displayName="Simple Item Block Mod"
+modId="event_bus_check"
+displayName="Event Bus Check Mod"
 version="${file.jarVersion}"
-description="Add Simple Item and Simple Block"
+description="Check Each Event Bus Behabiour"
 logoFile="icon.png"
 
-[[dependencies.simple_item_block_mod]]
+[[dependencies.event_bus_check]]
 modId="forge"
 versionRange="[43,)"
 mandatory=true
 
-[[dependencies.simple_item_block_mod]]
+[[dependencies.event_bus_check]]
 modId="minecraft"
 versionRange="[1.19.2,1.20)"
 mandatory=true
